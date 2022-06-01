@@ -1,12 +1,3 @@
-function deleteNote(noteId) {
-  fetch("/delete-note", {
-    method: "POST",
-    body: JSON.stringify({ noteId: noteId }),
-  }).then((_res) => {
-    window.location.href = "/";
-  });
-}
-
 function deletePet(petId) {
   fetch("/delete-pet", {
     method: "POST",
@@ -15,4 +6,3 @@ function deletePet(petId) {
     window.location.href = "/";
   });
 }
-
