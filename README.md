@@ -21,3 +21,10 @@ python main.py
 ## Viewing The App
 
 Go to `http://127.0.0.1:5000`
+
+## Possible Errors:
+
+- ImportError: "DLL load failed while importing _sqlite3: The specified module could not be found."
+-> go to this link: https://www.sqlite.org/download.html
+-> download the zip for your machine under "precompiled binaries"
+-> extract "sqlite3.dll" and place it in Users\yourname\anaconda3\DLLs
