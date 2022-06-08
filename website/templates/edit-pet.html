@@ -6,20 +6,35 @@
     <br />
     <form action="/edit-pet/{{pet.id}}" METHOD="POST">
         <div class="form-group">
+            <label for="species">Name:</label>
             <input type="text" placeholder="Edit Name" name="name" value="{{pet.name}}">
         </div>
         <div class="form-group">
-            <label for="species">Pet Species:</label>
+            <label for="species">Species:</label>
             <label for="R1"> Dog</LABEL>
             <input type="radio" name="species" id="R1" value="Dog">
             <label for="R2"> Cat</LABEL>
             <input type="radio" name="species" id="R2" value="Cat">
         </div>
         <div class="form-group">
+            <label for="species">Breed:</label>
             <input type="text" placeholder="Edit Breed" name="breed" value="{{pet.breed}}">
         </div>
         <div class="form-group">
-            <input type="text" placeholder="Edit Age" name="age" value="{{pet.age}}">
+            <label for="age">Age:</label>
+            <select class="form-select" placeholder="Edit Age" id="age" name="age" aria-label="Pet age" value="{{pet.age}}">
+                <option selected>Select your pet's age...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10+</option>
+              </select>
         </div>
         <div align="center">
             <button type="submit" class="btn btn-primary">Edit Your Pet</button>
